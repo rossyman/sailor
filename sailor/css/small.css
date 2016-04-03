@@ -1,0 +1,37 @@
+/**
+ *   Small device CSS, mostly to fix alignment
+ */
+
+#top {
+	position: relative;
+}
+
+#top ul {
+	display: block;
+}
+
+#comment p, .footnote {
+	float: none;
+	width: 100%;
+
+	white-space: normal;
+}
+
+#bottom {
+padding: 20px 0;
+}
+#bottom small {
+display: block;
+}
+#bottom ul {
+overflow: hidden;
+float: none;
+margin-bottom: 15px;
+}
+#bottom li {
+padding: 15px 15px 0 0;
+}
+
+input[name=term] { padding-top: 20px; }
+
+#logo { padding-right: 0px; display: inline-block; margin: 0; }

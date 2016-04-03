@@ -1,0 +1,5 @@
+Theme name:    Sailor
+Description:   A clean, distraction free theme.
+Author name:   Ross MacPhee
+Author site:   https://rossmacphee.com
+License:       http://gnu.org/licenses/gpl-3.0.en.html
