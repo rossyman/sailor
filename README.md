@@ -3,7 +3,9 @@ Ahoy, Sailor! Drop your anchor and board our ship. We've got a theme for you to 
 
 Sailor is a modern, lightweight theme designed to work with Anchor CMS; why you may ask? Simply because Anchor CMS is possibly the best CMS I've ever used and as such it should have a vast library of amazing themes, or so you'd think. Due to Anchor sailing in the shadow of other CMS's like October and Wordpress, it appears like not too many developers have made themes for it. In this case, anchor needs momentum, so smaller = faster right? Definitely! That's why when designing this theme I intended to make it as lightweight as possible and by only using styles that were required.
 
-> Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
+
+Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
+
 
 Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)!
 
