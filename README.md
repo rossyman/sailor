@@ -6,10 +6,12 @@ Sailor is a modern, lightweight theme designed to work with Anchor CMS; why you 
 
 Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
 
+## Live Preview
 
 Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
 
-So, some thing's you may be wonder are as follows:
+## Consult the almighty FAQ
+
 > Uhhhh, how do I remove that Sailor logo (But who'd want to do that, am I right?)
 
 Firstly head over to this theme's image folder, located in "{Base_Folder}/themes/Sailor/img/". Next, you'll want to replace the file called "logo.png" with your own logo!
