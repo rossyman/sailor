@@ -6,9 +6,24 @@ Sailor is a modern, lightweight theme designed to work with Anchor CMS; why you 
 
 Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
 
-## Live Preview
-
 Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
+
+## Features
+
+[x] Completely mobile responsive
+[x] Includes Open-Graph protocol
+[x] Social-Media account icons
+[x] No-render blocking CSS
+[x] No-render blocking Javascript
+[x] A blazing-fast 1s load time
+
+### You're lying, 1s load time!?
+
+Why should I lie? I love my theme, and you'll love the speed! Still don't believe me? Maybe this screenshot will help!
+
+![The blazing fast 1 second load time](https://i.gyazo.com/7b9e8ebcadddb9818d66ca88aefe76e6.png)
+
+> "I'm no wizard mate, but this can be faked with inspect element or Photoshop!", well the only way you'll see the speed, is by trying the theme yourself!
 
 ## Social Media Accounts
 
