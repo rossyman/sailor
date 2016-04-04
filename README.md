@@ -17,6 +17,11 @@ Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/the
 - [x] No-render blocking Javascript
 - [x] A blazing-fast 1s load time
 
+## More Features Please
+
+Check out our submissions page on [FeatHub](http://feathub.com/)
+[![Feature Requests](http://feathub.com/CaptainRoss/Sailor?format=svg)](http://feathub.com/CaptainRoss/Sailor)
+
 ### You're lying, 1s load time!?
 
 Why should I lie? I love my theme, and you'll love the speed! Still don't believe me? Maybe this screenshot will help!
