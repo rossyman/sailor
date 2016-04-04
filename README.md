@@ -46,6 +46,6 @@ Firstly head over to this theme's image folder, located in "{Base_Folder}/themes
 
 The dimensions of the logo are 22x22px, yes yes, I know it's small, but the smaller the better right?!; Don't forget, dynamically resizing images through "max-width" means increased loading time and mobile users along with Google hate Dynamic people, so don't be _that_ guy!
 
-> How many markdown shortcuts does this support?
+> Does this theme support all the aspects of markdown?
 
 We support all shorthand styles so that includes, _italics_, **bold text**, tables and everything else under the sun, except coloured code blocks because that'd require a more advanced pre-processor and themes don't control this.
