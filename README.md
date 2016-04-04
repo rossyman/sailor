@@ -20,6 +20,7 @@ Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/the
 ## More Features Please
 
 Check out our submissions page on [FeatHub](http://feathub.com/)
+
 [![Feature Requests](http://feathub.com/CaptainRoss/Sailor?format=svg)](http://feathub.com/CaptainRoss/Sailor)
 
 ### You're lying, 1s load time!?
