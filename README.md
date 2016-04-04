@@ -34,7 +34,7 @@ Why should I lie? I love my theme, and you'll love the speed! Still don't believ
 
 ## Working with Emoji's
 
-If you've ever been on reddit, you'll have seen that people make custom "Flairs" by using dummy links, so with this in mind I decided to implement custom dummy links for emojis. To use an emoji, do as follows:
+If you've ever been on reddit, you'll have seen that people make custom "Flairs" by using dummy links, so with this in mind I decided to implement custom dummy links for emojis, so that you can use them anywhere on your blog. To use an emoji, do as follows:
 
 ```markdown
 [](#{emojiname} "{emojiname} Emoji")
@@ -42,7 +42,7 @@ If you've ever been on reddit, you'll have seen that people make custom "Flairs"
 
 Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found (here)[http://www.emoji-cheat-sheet.com/], just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-").
 
-For example: ":heart_eyes:" becomes "heart-eyes", and this would be your {emojiname}! :smile:
+For example: ``` ":heart_eyes:" ``` becomes "heart-eyes", and this would be the name of the emoji! :smile:
 
 ## Social Media Accounts
 
