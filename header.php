@@ -17,7 +17,7 @@
 		<!-- Website's stylesheets -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" media="none" onload="if(media!='all')media='all'">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="none" onload="if(media!='all')media='(max-width: 830px)'">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="none" onload="if(media!='all')media='(max-width: 905px)'">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" media="none" onload="if(media!='all')media='all'">
@@ -25,7 +25,7 @@
 		<noscript>
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 830px)">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 905px)">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>">
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300">
@@ -62,7 +62,7 @@
 		<div class="main-wrap">
 			<header id="top">
 				<div class="wrap">
-					<a href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>"><img id="logo" src="<?php echo theme_url('/img/logo.png'); ?>" alt="<?php echo site_name(); ?>" /></a>
+					<a href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>" id="logo-top"><img id="logo" src="<?php echo theme_url('/img/logo.png'); ?>" alt="<?php echo site_name(); ?>" /></a>
 
 					<div id="navLinks">
 						<ul>
@@ -78,7 +78,9 @@
 						</ul>
 					</div>
 					<form id="search" action="<?php echo search_url(); ?>" method="post">
-						<input type="search" id="term" name="term" placeholder="Search" value="<?php echo search_term(); ?>">
+						<fieldset id="search-mobile">
+							<input type="search" id="term" name="term" placeholder="Search" value="<?php echo search_term(); ?>">
+						</fieldset>
 						<input type="hidden" id="whatSearch" name="whatSearch" value="all" />
 					</form>
 					<div id="headliner">

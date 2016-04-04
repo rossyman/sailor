@@ -1,4 +1,4 @@
-#top{overflow:hidden;padding: 50px 35px;background:#e4e7ec;}
+#top{overflow:hidden;padding: 45px 35px;background:#e4e7ec;}
 #top a{float:left;font-size:13px;font-weight:500;text-decoration:none;color:#727f94}
 #top #logo:hover,#top ul a:hover,#top ul .active a,.posts .items li:first-child h2 a:hover,p a:hover{color:#465263}
 #top ul{list-style:none;float:right}
@@ -52,7 +52,7 @@ ul.commentlist .counter{position:absolute;right:0;top:0;font-size:25px;font-weig
 #bottom li{float:left;padding-left:35px;font-size:14px}
 #bottom a{text-decoration:none}
 #navLinks ul { float: left; margin-top: 3px; }
-#navLinks li { padding-right: 30px; }
+#navLinks li { padding-right: 25px; }
 #navLinks li:last-of-type { padding-right: 73px; }
 #navlinks a { color: #727f94; text-decoration: none; }
 #headliner { display: block; }
@@ -91,3 +91,5 @@ article .content h1 { padding-top: 0px; }
 .social-icon { padding-left: 20px !important; }
 #last-normal { padding-right: 20px; }
 .mobile-break { display: none; }
+#top ul .active a { color: #727f94; }
+#search-mobile { margin: 0 auto; border-color: transparent; }

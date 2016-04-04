@@ -2,7 +2,6 @@
 				<div class="wrap">
 		            <footer id="bottom" class="clearfix">
 		                <small><b>&copy; <?php echo date('Y'); ?></b>. Seems like you've reached the end&hellip;</small>
-
 		                <ul role="navigation">
 		                    <li><a href="<?php echo rss_url(); ?>">Feed Me</a></li>
 		                    <?php if ((user_authed()) && (user_authed_role() == "administrator")): ?>
