@@ -10,6 +10,17 @@ Inspiration for this design came from the Anchor Docs and other online blog's I'
 
 Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
 
+## Social Media Accounts
+
+One feature that this theme has, is the ability for social icons in the footer of your blog! Currently we only support; Twitter, Facebook, GitHub, Instagram and YouTube. This is still a fairly new feature added and it may not be fully refined yet, so if you have a problem, let me know in the issues section of this repo. To add a link to your accounts do the following:
+
+1. Create a new custom variable under **Extend > Site Variables** in your admin panel.
+2. Enter the following:
+  - Name: (youtube, twitter, facebook, github or instagram)
+  - Value: **Everything after the domain name** (/pages/{long_facebook_url}, /channel/{long_youtube_url}, /{handle})
+3. Click Update
+4. You should now see the desired Icon in the footer of your blog
+
 ## Consult the almighty FAQ
 
 > Uhhhh, how do I remove that Sailor logo (But who'd want to do that, am I right?)
