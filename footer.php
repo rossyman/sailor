@@ -5,7 +5,12 @@
 
 		                <ul role="navigation">
 		                    <li><a href="<?php echo rss_url(); ?>">Feed Me</a></li>
-		                    <li id="last-normal"><a href="<?php echo base_url('feeds/json'); ?>">Bleep Bloop</a></li>
+		                    <?php if ((user_authed()) && (user_authed_role() == "administrator")): ?>
+		                    <li><a href="<?php echo base_url('feeds/json'); ?>">Bleep Bloop</a></li>
+		                    <li id="last-normal"><a href="<?php echo base_url('admin'); ?>">Admin Panel</a></li>
+		                    <?php else: ?>
+							<li id="last-normal"><a href="<?php echo base_url('feeds/json'); ?>">Bleep Bloop</a></li>
+		                    <?php endif ?>
 		                    <br class="mobile-break" />
 		                    <ul id="social-icons">
 		                    	<?php if(twitter_account()): ?>

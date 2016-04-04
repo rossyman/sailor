@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="none" onload="if(media!='all')media='(max-width: 830px)'">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" media="none" onload="if(media!='all')media='all'">
 
@@ -25,6 +26,7 @@
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 830px)">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>">
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300">
 		</noscript>
