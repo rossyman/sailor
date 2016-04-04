@@ -39,5 +39,8 @@
 		        </div>
 			</div>
         </div>
+        <script>
+        	['<?php echo asset_url('/js/zepto.js'); ?>', '<?php echo theme_url('/js/main.js'); ?>'].forEach(function(src) { var script = document.createElement('script'); script.src = src; script.async = false; document.head.appendChild(script); });
+        </script>
     </body>
 </html>
