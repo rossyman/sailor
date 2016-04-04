@@ -13,27 +13,27 @@
 		                    <?php endif ?>
 		                    <br class="mobile-break" />
 		                    <ul id="social-icons">
-		                    	<?php if(twitter_account()): ?>
+		                    	<?php if(twitter_account() != ''): ?>
 		                    	<li class="social-icon"><a href="<?php echo twitter_url() ?>" title="<?php echo twitter_account() . ' on Twitter' ?>">
 		                    		<span class="sr-only"><?php echo twitter_account() . ' on Twitter' ?></span><i class="ion-social-twitter" aria-hidden="true"></i>
 		                    	</a></li>
 			                    <?php endif ?>
-			                    <?php if (facebook_account()): ?>
+			                    <?php if (facebook_account() != ''): ?>
 			                    <li class="social-icon"><a href="<?php echo facebook_url() ?>" title="<?php echo facebook_title() . ' on Facebook' ?>">
 		                    		<span class="sr-only"><?php echo facebook_title() . ' on Facebook' ?></span><i class="ion-social-facebook" aria-hidden="true"></i>
 		                    	</a></li>
 			                    <?php endif ?>
-			                    <?php if (github_account()): ?>
+			                    <?php if (github_account() != ''): ?>
 			                    <li class="social-icon"><a href="<?php echo github_url() ?>" title="<?php echo github_account() . ' on GitHub' ?>">
 		                    		<span class="sr-only"><?php echo github_account() . ' on GitHub' ?></span><i class="ion-social-github" aria-hidden="true"></i>
 		                    	</a></li>
 			                    <?php endif ?>
-			                    <?php if (instagram_account()): ?>
+			                    <?php if (instagram_account() != ''): ?>
 			                    <li class="social-icon"><a href="<?php echo instagram_url() ?>" title="<?php echo instagram_account() . ' on Instagram' ?>">
 		                    		<span class="sr-only"><?php echo instagram_account() . ' on Instagram' ?></span><i class="ion-social-instagram" aria-hidden="true"></i>
 		                    	</a></li>
 			                    <?php endif ?>
-			                    <?php if (youtube_account()): ?>
+			                    <?php if (youtube_account() != ''): ?>
 			                    <li class="social-icon"><a href="<?php echo youtube_url() ?>" title="<?php echo youtube_title() . ' on YouTube' ?>">
 		                    		<span class="sr-only"><?php echo youtube_title() . ' on YouTube' ?></span><i class="ion-social-youtube" aria-hidden="true"></i>
 		                    	</a></li>
