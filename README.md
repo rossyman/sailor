@@ -16,6 +16,7 @@ Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/the
 - [x] No-render blocking CSS
 - [x] No-render blocking Javascript
 - [x] A blazing-fast 1s load time
+- [x] Emoji Support (Twemoji)
 
 ## More Features Please
 
@@ -30,6 +31,18 @@ Why should I lie? I love my theme, and you'll love the speed! Still don't believ
 ![The blazing fast 1 second load time](https://i.gyazo.com/7b9e8ebcadddb9818d66ca88aefe76e6.png)
 
 > "I'm no wizard mate, but this can be faked with inspect element or Photoshop!", well the only way you'll see the speed, is by trying the theme yourself!
+
+## Working with Emoji's
+
+If you've ever been on reddit, you'll have seen that people make custom "Flairs" by using dummy links, so with this in mind I decided to implement custom dummy links for emojis. To use an emoji, do as follows:
+
+```markdown
+[](#{emojiname} "{emojiname} Emoji")
+```
+
+Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found (here)[http://www.emoji-cheat-sheet.com/], just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-").
+
+For example: ":heart_eyes:" becomes "heart-eyes", and this would be your {emojiname}! :smile:
 
 ## Social Media Accounts
 
