@@ -47,7 +47,7 @@ If you've ever been on reddit, you'll have seen that people make custom "Flairs"
 [](#{emojiname} "{emojiname} Emoji")
 ```
 
-Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found (here)[http://www.emoji-cheat-sheet.com/], just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-").
+Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found [here](http://www.emoji-cheat-sheet.com/), just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-").
 
 For example: ``` ":heart_eyes:" ``` becomes "heart-eyes", and this would be the name of the emoji! :smile:
 
