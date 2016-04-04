@@ -10,12 +10,12 @@ Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/the
 
 ## Features
 
-[x] Completely mobile responsive
-[x] Includes Open-Graph protocol
-[x] Social-Media account icons
-[x] No-render blocking CSS
-[x] No-render blocking Javascript
-[x] A blazing-fast 1s load time
+- [x] Completely mobile responsive
+- [x] Includes Open-Graph protocol
+- [x] Social-Media account icons
+- [x] No-render blocking CSS
+- [x] No-render blocking Javascript
+- [x] A blazing-fast 1s load time
 
 ### You're lying, 1s load time!?
 
