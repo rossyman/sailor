@@ -18,7 +18,7 @@ ___
 - [x] No-render blocking Javascript
 - [x] A blazing-fast 1s load time
 - [x] Emoji Support (Twemoji)
-- 
+
 ___
 
 ## More Features Please
