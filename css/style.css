@@ -98,3 +98,7 @@ article .content h1 { padding-top: 0px; }
 .content ul { padding: 0px; }
 .bottomWrapper { margin-bottom: 20px; }
 .searchItems h2 { border-bottom: 0px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.social-icon { padding-left: 20px !important; }
+#last-normal { padding-right: 20px; }
+.mobile-break { display: none; }

@@ -59,13 +59,18 @@ function relative_time($date) {
 	}
 }
 
-function twitter_account() {
-	return site_meta('twitter', 'idiot');
-}
-
-function twitter_url() {
-	return 'https://twitter.com/' . twitter_account();
-}
+function twitter_account() { if (substr(site_meta('twitter', 'anchorcms'), 0, 1) == "@") { return substr(site_meta('twitter', 'anchorcms'), 1, strlen(site_meta('twitter', 'anchorcms')) - 1); } else { return site_meta('twitter', 'anchorcms'); } }
+function twitter_url() { return 'https://twitter.com/' . twitter_account(); }
+function facebook_account() { return site_meta('facebook', 'anchorcms'); }
+function facebook_title() { if (substr(site_meta('facebook', 'anchorcms'), 0, 6) == "pages/") { return substr(site_meta('facebook', 'anchorcms'), 6, strlen(site_meta('facebook', 'anchorcms')) - 1); } else { return site_meta('facebook', 'anchorcms'); } }
+function facebook_url() { return 'https://www.facebook.com/' . facebook_account(); }
+function github_account() { return site_meta('github', 'anchorcms'); }
+function github_url() { return 'https://github.com/' . github_account(); }
+function instagram_account() { return site_meta('instagram', 'instagram'); }
+function instagram_url() { return 'https://www.instagram.com/' . instagram_account(); }
+function youtube_account() { return site_meta('youtube', 'YouTube'); }
+function youtube_title() { if (substr(site_meta('youtube', 'YouTube'), 0, 8) == "channel/") { return substr(site_meta('youtube', 'YouTube'), 8, strlen(site_meta('youtube', 'YouTube')) - 1); } else { return site_meta('youtube', 'YouTube'); } }
+function youtube_url() { return 'https://www.youtube.com/' . youtube_account(); }
 
 function total_articles() {
 	return Post::where(Base::table('posts.status'), '=', 'published')->count();
