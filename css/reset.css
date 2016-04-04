@@ -7,7 +7,7 @@ pre{padding:15px 20px;margin-bottom:20px;border-radius:5px;white-space:pre-wrap}
 img{max-width:100%;height:auto}
 a{text-decoration:none}
 a img{border:none}
-.wrap{ min-width: 280px; width: 60%; margin: 0 auto; position: relative; max-width: 1000px;}
+.wrap{ min-width: 280px; width: 60%; margin: 0 auto; position: relative; max-width: 1000px; padding: 0px 20px; }
 body,.items > li:first-child{color:#6e7886}
 a,.items h1 a:hover{color:#4075c3}
 a:hover{color:#1e4d92}
@@ -20,4 +20,4 @@ input,textarea{color:#697281}
 .error p,.success p{float:none!important;width:100%;padding:0;margin:0!important}
 a,a img{-webkit-transition:opacity .2s,color .2s;-moz-transition:opacity .2s,color .2s;transition:opacity .2s,color .2s}
 pre, code, .mono { font: 12px/19px "Anonymous Pro", Consolas, monospace; padding: 0 2px; }
-h1{ padding: 80px 0 40px; font-size: 40px; line-height: 48px; color: #505762; }
+h1{ padding: 60px 0 20px; font-size: 40px; line-height: 48px; color: #505762; }
