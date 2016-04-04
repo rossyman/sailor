@@ -3,10 +3,11 @@ Ahoy, Sailor! Drop your anchor and board our ship. We've got a theme for you to 
 
 Sailor is a modern, lightweight theme designed to work with Anchor CMS; why you may ask? Simply because Anchor CMS is possibly the best CMS I've ever used and as such it should have a vast library of amazing themes, or so you'd think. Due to Anchor sailing in the shadow of other CMS's like October and Wordpress, it appears like not too many developers have made themes for it. In this case, anchor needs momentum, so smaller = faster right? Definitely! That's why when designing this theme I intended to make it as lightweight as possible and by only using styles that were required.
 
-
 Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
 
 Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
+
+___
 
 ## Features
 
@@ -17,12 +18,16 @@ Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/the
 - [x] No-render blocking Javascript
 - [x] A blazing-fast 1s load time
 - [x] Emoji Support (Twemoji)
+- 
+___
 
 ## More Features Please
 
 Check out our submissions page on [FeatHub](http://feathub.com/)
 
 [![Feature Requests](http://feathub.com/CaptainRoss/Sailor?format=svg)](http://feathub.com/CaptainRoss/Sailor)
+
+___
 
 ### You're lying, 1s load time!?
 
@@ -31,6 +36,8 @@ Why should I lie? I love my theme, and you'll love the speed! Still don't believ
 ![The blazing fast 1 second load time](https://i.gyazo.com/7b9e8ebcadddb9818d66ca88aefe76e6.png)
 
 > "I'm no wizard mate, but this can be faked with inspect element or Photoshop!", well the only way you'll see the speed, is by trying the theme yourself!
+
+___
 
 ## Working with Emoji's
 
@@ -44,6 +51,8 @@ Replace {emojiname} with the name of the emoji you wish to use. A list of emoji'
 
 For example: ``` ":heart_eyes:" ``` becomes "heart-eyes", and this would be the name of the emoji! :smile:
 
+___
+
 ## Social Media Accounts
 
 One feature that this theme has, is the ability for social icons in the footer of your blog! Currently we only support; Twitter, Facebook, GitHub, Instagram and YouTube. This is still a fairly new feature added and it may not be fully refined yet, so if you have a problem, let me know in the issues section of this repo. To add a link to your accounts do the following:
@@ -54,6 +63,8 @@ One feature that this theme has, is the ability for social icons in the footer o
   - Value: **Everything after the domain name** (/pages/{long_facebook_url}, /channel/{long_youtube_url}, /{handle})
 3. Click Update
 4. You should now see the desired Icon in the footer of your blog
+
+___
 
 ## Consult the almighty FAQ
 
