@@ -43,52 +43,46 @@
 		<script>var base = '<?php echo theme_url(); ?>';</script>
 
 		<!-- Objectify website's content -->
-		<?php if (article_title()): ?>
-		<meta property="og:title" content="<?php echo article_title(); ?>">
-		<?php else: ?>
-		<meta property="og:title" content="<?php echo site_meta('og_title', site_name()); ?>">
-		<?php endif ?>
-		<?php if (site_meta('og_type', 'WebSite')): ?>
-		<meta property="og:type" content="<?php echo site_meta('og_type', 'WebSite'); ?>">
-		<?php endif ?>
-	    <meta property="og:url" content="<?php echo e(current_url()); ?>">
-		<?php if(article_custom_field('social_image', '') != ''): ?>
-	    <meta property="og:image" content="<?php echo article_custom_field('social_image', ''); ?>">
-	    <?php else: ?>
-	    <meta property="og:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
-	    <?php endif ?>
-	    <meta property="og:site_name" content="<?php echo site_name(); ?>">
-	    <?php if(article_description()): ?>
-		<meta property="og:description" content="<?php echo article_description(); ?>">
-		<?php else: ?>
-		<meta property="og:description" content="<?php echo site_description(); ?>">
-		<?php endif ?>
+	<?php if (article_title()): ?>
+	<meta property="og:title" content="<?php echo article_title(); ?>">
+	<?php else: ?>
+	<meta property="og:title" content="<?php echo site_meta('og_title', site_name()); ?>">
+	<?php endif ?><?php if (site_meta('og_type', 'WebSite')): ?>
+	<meta property="og:type" content="<?php echo site_meta('og_type', 'WebSite'); ?>">
+	<?php endif ?>
+	<meta property="og:url" content="<?php echo base_url(e(current_url())); ?>">
+	<?php if(article_custom_field('social_image', '') != ''): ?>
+	<meta property="og:image" content="<?php echo article_custom_field('social_image', ''); ?>">
+	<?php else: ?>
+	<meta property="og:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
+	<?php endif ?>
+	<meta property="og:site_name" content="<?php echo site_name(); ?>">
+	<?php if(article_description()): ?>
+	<meta property="og:description" content="<?php echo article_description(); ?>">
+	<?php else: ?>
+	<meta property="og:description" content="<?php echo site_description(); ?>">
+	<?php endif ?>
 
-	    <!-- Implement twitter interactivity -->
-	    <?php if (site_meta('twitter_card', 'summary_large_image')): ?>
-	    <meta name="twitter:card" content="<?php echo site_meta('twitter_card', 'summary_large_image'); ?>">
-	    <?php endif ?>
-		<?php if (site_meta('twitter_account', twitter_account())): ?>
-		<meta name="twitter:site" content="@<?php echo site_meta('twitter_account', twitter_account()); ?>">
-		<?php endif ?>
-		<?php if(twitter_account() != ''): ?>
-		<meta name="twitter:creator" content="@<?php echo twitter_account(); ?>">
-		<?php endif ?>
-		<?php if (article_title()): ?>
-		<meta name="twitter:title" content="<?php echo article_title(); ?>">
-		<?php else: ?>
-		<meta name="twitter:title" content="<?php echo site_meta('og_title', site_name()); ?>">
-		<?php endif ?>
-		<?php if(article_description()): ?>
-		<meta name="twitter:description" content="<?php echo article_description(); ?>">
-		<?php else: ?>
-		<meta name="twitter:description" content="<?php echo site_description(); ?>">
-		<?php endif ?>
-		<?php if(article_custom_field('social_image', '') != ''): ?>
-	    <meta name="twitter:image" content="<?php echo article_custom_field('social_image', ''); ?>">
-	    <?php else: ?>
-	    <meta name="twitter:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
-	    <?php endif ?>
+		<!-- Implement twitter interactivity -->
+	<?php if (site_meta('twitter_card', 'summary_large_image')): ?>
+	<meta name="twitter:card" content="<?php echo site_meta('twitter_card', 'summary_large_image'); ?>">
+	<?php endif ?><?php if (site_meta('twitter_account', twitter_account())): ?>
+	<meta name="twitter:site" content="@<?php echo site_meta('twitter_account', twitter_account()); ?>">
+	<?php endif ?><?php if(twitter_account() != ''): ?>
+	<meta name="twitter:creator" content="@<?php echo twitter_account(); ?>">
+	<?php endif ?><?php if (article_title()): ?>
+	<meta name="twitter:title" content="<?php echo article_title(); ?>">
+	<?php else: ?>
+	<meta name="twitter:title" content="<?php echo site_meta('og_title', site_name()); ?>">
+	<?php endif ?><?php if(article_description()): ?>
+	<meta name="twitter:description" content="<?php echo article_description(); ?>">
+	<?php else: ?>
+	<meta name="twitter:description" content="<?php echo site_description(); ?>">
+	<?php endif ?><?php if(article_custom_field('social_image', '') != ''): ?>
+	<meta name="twitter:image" content="<?php echo article_custom_field('social_image', ''); ?>">
+	<?php else: ?>
+	<meta name="twitter:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
+	<?php endif ?>
 
 		<?php if(customised()): ?>
 		    <!-- Custom CSS -->
@@ -97,6 +91,7 @@
     		<!--  Custom Javascript -->
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
+
 	</head>
 	<body class="<?php echo body_class(); ?>">
 		<div class="main-wrap">
