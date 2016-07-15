@@ -3,11 +3,32 @@ Ahoy, Sailor! Drop your anchor and board our ship. We've got a theme for you to 
 
 Sailor is a modern, lightweight theme designed to work with Anchor CMS; why you may ask? Simply because Anchor CMS is possibly the best CMS I've ever used and as such it should have a vast library of amazing themes, or so you'd think. Due to Anchor sailing in the shadow of other CMS's like October and Wordpress, it appears like not too many developers have made themes for it. In this case, anchor needs momentum, so smaller = faster right? Definitely! That's why when designing this theme I intended to make it as lightweight as possible and by only using styles that were required.
 
-Inspiration for this design came from the Anchor Docs and other online blog's I've been to. Not to mention that some of the code styles came from my experience with Github.
+Inspiration for this design came from the Anchor Docs and other online blogs I've been to. Not to mention that some of the code styles came from my experience with Github. Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
 
-Anyway, you can view a live demo of ![Sailor](https://rossmacphee.com/Sailor/themes/sailor/img/logo.png) on my website which is located here: [Live Demo, woo hoo!](https://rossmacphee.com/Sailor/)
 
-___
+
+
+## Installation
+
+Installing Sailor is as easy as the next theme! On a UNIX system you can do the following:
+```
+cd /ANCHOR_INSTALL_FOLDER/themes/
+curl -LOk https://github.com/CaptainRoss/Sailor/archive/master.zip
+unzip master.zip
+mv Sailor-master Sailor
+rm master.zip
+```
+
+On windows, you can download the master zip file from this repo and manually move the contents to your themes folder, or you can install the GitHub command line toolbelt and follow the steps below. 
+
+Optionally if you have the github command line toolbelt installed, you can do the following:
+```git
+cd /ANCHOR_INSTALL_FOLDER/themes/
+git clone https://github.com/CaptainRoss/Sailor.git
+```
+
+
+
 
 ## Features
 
@@ -19,7 +40,8 @@ ___
 - [x] A blazing-fast 1s load time
 - [x] Emoji Support (Twemoji)
 
-___
+
+
 
 ## More Features Please
 
@@ -27,7 +49,8 @@ Check out our submissions page on [FeatHub](http://feathub.com/)
 
 [![Feature Requests](http://feathub.com/CaptainRoss/Sailor?format=svg)](http://feathub.com/CaptainRoss/Sailor)
 
-___
+
+
 
 ### You're lying, 1s load time!?
 
@@ -37,9 +60,10 @@ Why should I lie? I love my theme, and you'll love the speed! Still don't believ
 
 > "I'm no wizard mate, but this can be faked with inspect element or Photoshop!", well the only way you'll see the speed, is by trying the theme yourself!
 
-___
 
-## Working with Emoji's
+
+
+## Working with Emojis
 
 If you've ever been on reddit, you'll have seen that people make custom "Flairs" by using dummy links, so with this in mind I decided to implement custom dummy links for emojis, so that you can use them anywhere on your blog. To use an emoji, do as follows:
 
@@ -47,11 +71,10 @@ If you've ever been on reddit, you'll have seen that people make custom "Flairs"
 [](#{emojiname} "{emojiname} Emoji")
 ```
 
-Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found [here](http://www.emoji-cheat-sheet.com/), just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-").
+Replace {emojiname} with the name of the emoji you wish to use. A list of emoji's can be found [here](http://www.emoji-cheat-sheet.com/), just make sure to remove the colons ("::") and replace underscores ("_") with hyphens ("-"). For example: ``` ":heart_eyes:" ``` becomes "heart-eyes", and this would be the name of the emoji! :smile:
 
-For example: ``` ":heart_eyes:" ``` becomes "heart-eyes", and this would be the name of the emoji! :smile:
 
-___
+
 
 ## Social Media Accounts
 
@@ -64,7 +87,8 @@ One feature that this theme has, is the ability for social icons in the footer o
 3. Click Update
 4. You should now see the desired Icon in the footer of your blog
 
-___
+
+
 
 ## Consult the almighty FAQ
 
