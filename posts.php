@@ -5,8 +5,8 @@
 	<?php if(has_posts()): ?>
 		<ul class="items">
 			<?php posts(); ?>
-			<li>
-				<article class="wrap">
+			<li id="first-article">
+				<article class="wrap" id="article-home">
 					<h1>
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
