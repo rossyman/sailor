@@ -85,3 +85,6 @@ var Anchor = {
 
 //  And bind loading
 $(Anchor.init);
+
+// Fade document in
+$(function() { $('.loading-screen').delay(500).fadeOut("slow", function() { }); });

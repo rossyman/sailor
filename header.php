@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-	<head prefix="og: http://ogp.me/ns#">
+<html lang="<?php echo site_meta('lang', 'en') ?>" dir="ltr">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
 		<!-- Header Configuration -->
 		<meta charset="utf-8">
@@ -14,22 +14,18 @@
 		<meta name="description" content="<?php echo site_description(); ?>">
 		<meta name="generator" content="Anchor CMS">
 
-		<!-- Website's stylesheets -->
-		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>" media="none" onload="if(media!='all')media='all'">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>" media="none" onload="if(media!='all')media='all'">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="none" onload="if(media!='all')media='(max-width: 905px)'">
+		<!-- Stop render blocking CSS -->
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" integrity="sha384-4r9SMzlCiUSd92w9v1wROFY7DlBc5sDYaEBhcCJR7Pm2nuzIIGKVRtYWlf6w+GG4" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>" media="none" onload="if(media!='all')media='all'">
-		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="none" onload="if(media!='all')media='all'">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" media="none" onload="if(media!='all')media='all'">
 
-		<noscript>
+		<!-- Require render-blocking CSS on older no-js browsers -->
+		<noscript><link lazyload rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" integrity="sha384-4r9SMzlCiUSd92w9v1wROFY7DlBc5sDYaEBhcCJR7Pm2nuzIIGKVRtYWlf6w+GG4" crossorigin="anonymous"><link lazyload rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300"><link lazyload rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>"></noscript>
+
+		<!-- Require website's stylesheets -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 905px)">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css'); ?>">
-		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300">
-		</noscript>
+		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 920px)">
 
 		<!-- Link to RSS feed and Icon -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
@@ -43,46 +39,46 @@
 		<script>var base = '<?php echo theme_url(); ?>';</script>
 
 		<!-- Objectify website's content -->
-	<?php if (article_title()): ?>
-	<meta property="og:title" content="<?php echo article_title(); ?>">
-	<?php else: ?>
-	<meta property="og:title" content="<?php echo site_meta('og_title', site_name()); ?>">
-	<?php endif ?><?php if (site_meta('og_type', 'WebSite')): ?>
-	<meta property="og:type" content="<?php echo site_meta('og_type', 'WebSite'); ?>">
-	<?php endif ?>
-	<meta property="og:url" content="<?php echo base_url(e(current_url())); ?>">
-	<?php if(article_custom_field('social_image', '') != ''): ?>
-	<meta property="og:image" content="<?php echo article_custom_field('social_image', ''); ?>">
-	<?php else: ?>
-	<meta property="og:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
-	<?php endif ?>
-	<meta property="og:site_name" content="<?php echo site_name(); ?>">
-	<?php if(article_description()): ?>
-	<meta property="og:description" content="<?php echo article_description(); ?>">
-	<?php else: ?>
-	<meta property="og:description" content="<?php echo site_description(); ?>">
-	<?php endif ?>
+		<?php if (article_title()): ?>
+		<meta property="og:title" content="<?php echo article_title(); ?>">
+		<?php else: ?>
+		<meta property="og:title" content="<?php echo site_meta('og_title', site_name()); ?>">
+		<?php endif ?><?php if (site_meta('og_type', 'WebSite')): ?>
+		<meta property="og:type" content="<?php echo site_meta('og_type', 'WebSite'); ?>">
+		<?php endif ?>
+		<meta property="og:url" content="<?php echo base_url(e(current_url())); ?>">
+		<?php if(article_custom_field('social_image', '') != ''): ?>
+		<meta property="og:image" content="<?php echo article_custom_field('social_image', ''); ?>">
+		<?php else: ?>
+		<meta property="og:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
+		<?php endif ?>
+		<meta property="og:site_name" content="<?php echo site_name(); ?>">
+		<?php if(article_description()): ?>
+		<meta property="og:description" content="<?php echo article_description(); ?>">
+		<?php else: ?>
+		<meta property="og:description" content="<?php echo site_description(); ?>">
+		<?php endif ?>
 
 		<!-- Implement twitter interactivity -->
-	<?php if (site_meta('twitter_card', 'summary_large_image')): ?>
-	<meta name="twitter:card" content="<?php echo site_meta('twitter_card', 'summary_large_image'); ?>">
-	<?php endif ?><?php if (site_meta('twitter_account', twitter_account())): ?>
-	<meta name="twitter:site" content="@<?php echo site_meta('twitter_account', twitter_account()); ?>">
-	<?php endif ?><?php if(twitter_account() != ''): ?>
-	<meta name="twitter:creator" content="@<?php echo twitter_account(); ?>">
-	<?php endif ?><?php if (article_title()): ?>
-	<meta name="twitter:title" content="<?php echo article_title(); ?>">
-	<?php else: ?>
-	<meta name="twitter:title" content="<?php echo site_meta('og_title', site_name()); ?>">
-	<?php endif ?><?php if(article_description()): ?>
-	<meta name="twitter:description" content="<?php echo article_description(); ?>">
-	<?php else: ?>
-	<meta name="twitter:description" content="<?php echo site_description(); ?>">
-	<?php endif ?><?php if(article_custom_field('social_image', '') != ''): ?>
-	<meta name="twitter:image" content="<?php echo article_custom_field('social_image', ''); ?>">
-	<?php else: ?>
-	<meta name="twitter:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
-	<?php endif ?>
+		<?php if (site_meta('twitter_card', 'summary_large_image')): ?>
+		<meta name="twitter:card" content="<?php echo site_meta('twitter_card', 'summary_large_image'); ?>">
+		<?php endif ?><?php if (site_meta('twitter_account', twitter_account())): ?>
+		<meta name="twitter:site" content="@<?php echo site_meta('twitter_account', twitter_account()); ?>">
+		<?php endif ?><?php if(twitter_account() != ''): ?>
+		<meta name="twitter:creator" content="@<?php echo twitter_account(); ?>">
+		<?php endif ?><?php if (article_title()): ?>
+		<meta name="twitter:title" content="<?php echo article_title(); ?>">
+		<?php else: ?>
+		<meta name="twitter:title" content="<?php echo site_meta('og_title', site_name()); ?>">
+		<?php endif ?><?php if(article_description()): ?>
+		<meta name="twitter:description" content="<?php echo article_description(); ?>">
+		<?php else: ?>
+		<meta name="twitter:description" content="<?php echo site_description(); ?>">
+		<?php endif ?><?php if(article_custom_field('social_image', '') != ''): ?>
+		<meta name="twitter:image" content="<?php echo article_custom_field('social_image', ''); ?>">
+		<?php else: ?>
+		<meta name="twitter:image" content="<?php echo site_meta('og_image', theme_url('img/og_image.gif')); ?>">
+		<?php endif ?>
 
 		<?php if(customised()): ?>
 		    <!-- Custom CSS -->
@@ -92,8 +88,27 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
+		<style>
+			.loading-screen { width: 100%; background-color: #ffffff; height: 100vh; position: fixed; z-index: 2; }.loading-screen-inner { margin-top: 50vh; -webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%); }.spinner{margin:40px auto 0;width:70px;text-align:center}.spinner>div{width:12px;height:12px;background-color:#e1e8ed;border-radius:100%;display:inline-block;-webkit-animation:sk-bouncedelay 1.4s infinite ease-in-out both;animation:sk-bouncedelay 1.4s infinite ease-in-out both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}@-moz-keyframes bounce{0%,20%,50%,80%,100%{-moz-transform:translateY(0);transform:translateY(0)}40%{-moz-transform:translateY(-30px);transform:translateY(-30px)}60%{-moz-transform:translateY(-15px);transform:translateY(-15px)}}@-webkit-keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes bounce{0%,20%,50%,80%,100%{-moz-transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}40%{-moz-transform:translateY(-30px);-ms-transform:translateY(-30px);-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-moz-transform:translateY(-15px);-ms-transform:translateY(-15px);-webkit-transform:translateY(-15px);transform:translateY(-15px)}}
+		</style>
 	</head>
 	<body class="<?php echo body_class(); ?>">
+		<div class="loading-screen">
+			<div class="loading-screen-inner">
+				<div class="spinner">
+					<div class="bounce1"></div>
+					<div class="bounce2"></div>
+					<div class="bounce3"></div>
+				</div>
+			</div>
+		</div>
+		<?php if ((user_authed()) && (user_authed_role() == "administrator")): ?>
+		<div class="logged-in">
+			<div class="logged-in-inner">
+				<h3>Hello, <?php echo user_authed_name('user'); ?>! You are currently logged in. Click <a href="<?php echo base_url('admin'); ?>">here</a> to visit your admin panel!</h3>
+			</div>
+		</div>
+		<?php endif ?>
 		<div class="main-wrap">
 			<header id="top">
 				<div class="wrap">
@@ -118,8 +133,10 @@
 						</fieldset>
 						<input type="hidden" id="whatSearch" name="whatSearch" value="all" />
 					</form>
-					<div id="headliner">
-						<h1><?php echo page_title('Page can’t be found'); ?></h1>
-					</div>
 				</div>
 			</header>
+			<div id="headliner-wrap">
+				<div id="headliner">
+					<h1><?php echo page_title('Page can’t be found'); ?></h1>
+				</div>
+			</div>
