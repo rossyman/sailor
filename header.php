@@ -26,8 +26,8 @@
     <noscript><link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" integrity="sha384-4r9SMzlCiUSd92w9v1wROFY7DlBc5sDYaEBhcCJR7Pm2nuzIIGKVRtYWlf6w+GG4" crossorigin="anonymous"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300"><link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css') ?>"></noscript>
 
     <!-- Reference relative stylesheets -->
-    <link rel="stylesheet" href="<?php echo theme_url('/css/reset.css') ?>">
-    <link rel="stylesheet" href="<?php echo theme_url('/css/emoji.css') ?>">
+    <link rel="stylesheet" href="<?php echo theme_url('/css/reset.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo theme_url('/css/emoji.min.css') ?>">
     <link rel="stylesheet" href="<?php echo theme_url('/css/style.min.css') ?>">
 
     <!-- Link to RSS feed and favicon -->
