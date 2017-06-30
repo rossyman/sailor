@@ -1,9 +1,9 @@
-<?php theme_include('header'); ?>
+<?php theme_include('header') ?>
 
-		<section class="content wrap">
-			<h1><?php echo page_title(); ?></h1>
+<section class="content wrap">
+  <h1><?php echo page_title() ?></h1>
 
-			<?php echo page_content(); ?>
-		</section>
+  <?php echo page_content() ?>
+</section>
 
-<?php theme_include('footer'); ?>
+<?php theme_include('footer') ?>
